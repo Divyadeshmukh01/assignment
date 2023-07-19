@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
       downloadFile(hexData, 'canvas_pixel_data.txt');
     });
   
-    function getCanvasRegionPixelData(canvas, x, y, width, height) {
+    function getCanvasRegionPixelData(canvas, x, y, width, height) { 
       const context = canvas.getContext('2d');
       const imageData = context.getImageData(x, y, width, height);
       return imageData.data;
